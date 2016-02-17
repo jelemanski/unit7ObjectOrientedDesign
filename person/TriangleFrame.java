@@ -6,7 +6,6 @@ import java.awt.event.MouseEvent;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-
 /**
  * Write a description of class Triangle here.
  * 
@@ -19,33 +18,28 @@ line joining the first two points. After the third mouse press, draw the entire 
 The fourth mouse press erases the old triangle and starts a new one.
  */
 public class TriangleFrame extends JFrame
-  {  
+{  
     private static final int WIDTH = 100;
     private static final int HEIGHT = 100;
+    private TriangleComponent triangle;
+
     
-    private JFrame frame;
-    private JPanel panel;
- 
-    
-    public void TriangleComponent(Graphics g)
-    {
-       
-        
-    }
-    
-    public void placePoint()
-    {
-        
-    }
-    public interface MouseListener
+    public class Listener implements MouseListener
     {
         public void mousePressed(MouseEvent event)
         {
             int x = event.getX();
             int y = event.getY();
-            
-    }
-        
 
-}
+        }
+
+        public void mouseReleased(MouseEvent event);
+
+        public void mouseClicked(MouseEvent event); 
+
+        public void mouseEntered(MouseEvent event); 
+
+        public void mouseExited(MouseEvent event);
+
+    }
 }

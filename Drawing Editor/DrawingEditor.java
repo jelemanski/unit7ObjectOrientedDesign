@@ -1,5 +1,10 @@
 import javax.swing.JFrame;
 import java.awt.BorderLayout;
+import java.awt.Graphics2D;
+import javax.swing.JComponent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseEvent;
+import javax.swing.JPanel;
 
 /**
  * Write a description of class DrawingEditor here.

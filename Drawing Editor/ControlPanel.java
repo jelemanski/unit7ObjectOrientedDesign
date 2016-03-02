@@ -1,5 +1,5 @@
-import java.swing.JPanel
-
+import java.swing.JPanel;
+import javax.swing.JButton;
 /**
  * Write a description of class ControlPanel here.
  * 
@@ -11,6 +11,7 @@ public class ControlPanel extends JPanel
    
     public ControlPanel()
     {
+        Button("circle") circle  = new Button
         
         
     }
